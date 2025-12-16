@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Kegiatan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/lato.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo"><a href="/"><img src="images/logo puyuh kri.jpg" alt="puyuh kri" class="img-logo"></a></div>
+
+
+    <ul class="menu" id="menu">
+    <li><a href="/">Beranda</a></li>
+    <li><a href="/#tentang">Tentang Kami</a></li>
+    <li><a href="/harga.html">Harga</a></li>
+    <li><a href="/galeri.html">Galeri</a></li>
+    <li><a href="/kontak.html">Kontak</a></li>
+    </ul>
+
+
+    <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+    </div>
+</nav>
+<script>
+const hamburger = document.getElementById('hamburger');
+const menu = document.getElementById('menu');
+
+
+hamburger.addEventListener('click', () => {
+menu.classList.toggle('active');
+hamburger.classList.toggle('active');
+});
+</script>
+
+<header>
+<h1>Galeri Kegiatan Peternakan</h1>
+<p>Aktivitas sehari-hari dalam menjaga kualitas unggas</p>
+</header>
+
+
+<main class="container">
+<section class="gallery">
+<div class="gallery-card">
+<img src="https://placehold.co/600x400/png" alt="Pemberian pakan" />
+<div class="gallery-content">
+<h3>Pemberian Pakan</h3>
+<p>Pemberian pakan rutin setiap pagi dan sore untuk menjaga pertumbuhan unggas tetap optimal.</p>
+</div>
+</div>
+
+
+<div class="gallery-card">
+<img src="https://placehold.co/600x400/png" alt="Pembersihan kandang" />
+<div class="gallery-content">
+<h3>Pembersihan Kandang</h3>
+<p>Kandang dibersihkan setiap hari agar tetap higienis dan mencegah penyakit.</p>
+</div>
+</div>
+
+
+<div class="gallery-card">
+<img src="https://placehold.co/600x400/png" alt="Pemeriksaan kesehatan" />
+<div class="gallery-content">
+<h3>Pemeriksaan Kesehatan</h3>
+<p>Pengecekan kesehatan unggas dilakukan secara berkala oleh tenaga berpengalaman.</p>
+</div>
+</div>
+
+
+<div class="gallery-card">
+<img src="https://placehold.co/600x400/png" alt="Panen unggas" />
+<div class="gallery-content">
+<h3>Panen Unggas</h3>
+<p>Proses panen dilakukan dengan standar kebersihan dan ketelitian tinggi.</p>
+</div>
+</div>
+
+
+<div class="gallery-card">
+<img src="https://placehold.co/600x400/png" alt="Pengemasan" />
+<div class="gallery-content">
+<h3>Pengemasan</h3>
+<p>Unggas dikemas dengan rapi sebelum dikirim ke pelanggan.</p>
+</div>
+</div>
+
+
+<div class="gallery-card">
+<img src="https://placehold.co/600x400/png" alt="Pengiriman" />
+<div class="gallery-content">
+<h3>Pengiriman</h3>
+<p>Pengiriman dilakukan cepat dan aman sesuai permintaan pelanggan.</p>
+</div>
+</div>
+</section>
+
+
+<section class="info">
+<h2>Komitmen Kami</h2>
+<p>
+Setiap kegiatan dilakukan dengan standar operasional yang ketat demi menjaga kualitas,
+kesehatan, dan kepuasan pelanggan.
+</main>
+<!-- FOOTER -->
+<section id="footer" class="section footer">
+<p>&copy; 2025 Puyuh KRI Bekasi</p>
+<p>WhatsApp: 08xxxxxxxx | Email: info@puyuhkri.id</p>
+</section>
+</body>
+</html>

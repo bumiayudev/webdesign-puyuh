@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latar belakang - puyuh kri</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/lato.css">
+</head>
+<body>
+  
+
+<nav class="navbar">
+<div class="logo"><a href="/"><img src="images/logo puyuh kri.jpg" alt="puyuh kri" class="img-logo"></a></div>
+
+
+<ul class="menu" id="menu">
+<li><a href="/">Beranda</a></li>
+<li><a href="/#tentang">Tentang Kami</a></li>
+<li><a href="/harga.html">Harga</a></li>
+<li><a href="/galeri.html">Galeri</a></li>
+<li><a href="/kontak.html">Kontak</a></li>
+</ul>
+
+
+<div class="hamburger" id="hamburger">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</nav>
+
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const menu = document.getElementById('menu');
+
+
+hamburger.addEventListener('click', () => {
+menu.classList.toggle('active');
+hamburger.classList.toggle('active');
+});
+</script>
+
+<header>
+<h1>Daftar Harga Puyuh</h1>
+<p>Harga terbaru & transparan langsung dari peternak</p>
+</header>
+
+
+<main class="container">
+  <table class="price-table">
+  <thead>
+    <tr>
+    <th>Jenis Unggas</th>
+    <th>Berat / Umur</th>
+    <th>Harga</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bibit Puyuh Petelur(DOQ)</td>
+      <td>6-8 gr</td>
+      <td class="price">Rp 14.000</td>
+    </tr>
+    <tr>
+      <td>Anakan</td>
+      <td>Umur sehari</td>
+      <td class="price">Rp 5.000</td>
+    </tr>
+    <tr>
+      <td>Kandang</td>
+      <td>Isi 5 rak</td>
+      <td class="price">Rp 150.000</td>
+    </tr>
+    <tr>
+      <td>Telur Konsumsi</td>
+      <td>1 kg</td>
+      <td class="price">Rp 30.000</td>
+    </tr>
+    <tr>
+      <td>Telur Fertil</td>
+      <td>1 kg</td>
+      <td class="price">Rp 20.000</td>
+    </tr>
+  </tbody>
+  </table>
+
+
+  <div class="info">
+  <h3>Catatan</h3>
+  <ul>
+  <li>Harga dapat berubah mengikuti pasar</li>
+  <li>Pemesanan dalam jumlah besar mendapatkan diskon</li>
+  <li>Pengiriman area kota & luar kota tersedia</li>
+  </ul>
+
+  <a href="https://wa.me/628xxxxxxxxx" class="btn">Pesan via WhatsApp</a>
+  </div>
+</main>
+<!-- FOOTER -->
+<section id="footer" class="section footer">
+<p>&copy; 2025 Puyuh KRI Bekasi</p>
+<p>WhatsApp: 08xxxxxxxx | Email: info@puyuhkri.id</p>
+</section>
+
+</body>
+</html>

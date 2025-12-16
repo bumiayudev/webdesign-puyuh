@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web design - puyuh kri</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/lato.css">
+</head>
+<body>
+ <nav class="navbar">
+  <div class="logo">
+    <a href="/"><img src="images/logo puyuh kri.jpg" alt="puyuh kri" class="img-logo"></a>
+  </div>
+  <ul class="menu" id="menu">
+    <li><a href="/">Beranda</a></li>
+    <li><a href="#tentang">Tentang Kami</a></li>
+    <li><a href="/harga.html">Harga</a></li>
+    <li><a href="/galeri.html">Galeri</a></li>
+    <li><a href="/kontak.html">Kontak</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+    
+<!-- Konten Utama -->
+<main>
+<!-- HERO SECTION -->
+<section id="hero" class="hero">
+<h1>Puyuh KRI Bekasi</h1>
+<p>Jual beli bibit puyuh, anak puyuh, dan kandang puyuh petelur</p>
+<a href="#produk" class="btn">Lihat Produk</a>
+</section>
+
+<!-- TENTANG KAMI -->
+<section id="tentang" class="tentang">
+  <h2>Tentang Kami</h2>
+<div class="tentang-wrapper">
+  <div class="tentang-text">
+    <p>
+    <strong>Puyuh KRI</strong> adalah platform penjualan ternak puyuh yang
+    menghubungkan langsung peternak lokal dengan pembeli. Kami menyediakan bibit puyuh, telur tetas, kandang dan mesin tetas.
+    </p>
+    <p>
+    Dengan pengalaman bertahun-tahun di bidang peternakan, kami berkomitmen memberikan
+    harga terbaik, pengiriman cepat, dan layanan terpercaya untuk kebutuhan rumah tangga
+    maupun usaha kuliner.
+    </p>
+  </div>
+  <div class="tentang-box">
+    <div class="stat">
+    <h3>10+</h3>
+    <span>Tahun Pengalaman</span>
+    </div>
+    <div class="stat">
+    <h3>500+</h3>
+    <span>Pelanggan</span>
+    </div>
+    <div class="stat">
+    <h3>100%</h3>
+    <span>Unggas Sehat</span>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- PRODUK -->
+<section id="produk" class="produk">
+  <h2>Produk Unggulan</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Puyuh Siap Telur</h3>
+      <p>Berat 6 - 8 gram</p>
+      <span class="price">Rp 14.000 / ekor</span>
+    </div>
+    <div class="card">
+      <h3>Anak Puyuh</h3>
+      <p>Umur Sehari</p>
+      <span class="price">Rp 5.000 / ekor</span>
+    </div>
+    <div class="card">
+      <h3>Kandang Puyuh Petelur</h3>
+      <p>Bahan Kayu + Tempat pakan + Nipple puyuh + Tempat Kohe</p>
+      <span class="price">Rp 150.000</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- TESTIMONIAL -->
+<section id="testimonial" class="testimonial">
+  <h2>Apa Kata Pelanggan</h2>
+  <div class="content">
+    <blockquote>
+    "Unggas sehat, pengiriman cepat, harga bersaing." <br/><br/>
+    <img src="images/profile1.jpeg" alt="profile" class="img-profile" width="48" height="48">&nbsp;<strong> Pak Budi, Citeurep</strong>
+    </blockquote>
+    <blockquote>
+    "Unggas sehat, pengiriman cepat, harga bersaing." <br/><br/>
+    <img src="images/profile2.jpeg" alt="profile" class="img-profile" width="48" height="48">&nbsp;<strong> Pak Eko, Tangerang</strong>
+    </blockquote>
+    <blockquote>
+    "Unggas sehat, pengiriman cepat, harga bersaing." <br/><br/>
+    <img src="images/profile3.jpeg" alt="profile" class="img-profile" width="48" height="48">&nbsp;<strong>Pak Amin, Cimanggis</strong>
+    </blockquote>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<section id="footer" class="section footer">
+<p>&copy; 2025 Puyuh KRI Bekasi</p>
+<p>WhatsApp: 08xxxxxxxx | Email: info@puyuhkri.id</p>
+</section>
+</main>
+  </div>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.getElementById('menu');
+
+
+    hamburger.addEventListener('click', () => {
+      menu.classList.toggle('active');
+      hamburger.classList.toggle('active');
+      });
+  </script>
+</body>
+</html>

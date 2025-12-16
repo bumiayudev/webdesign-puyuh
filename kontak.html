@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Kegiatan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/lato.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo"><a href="/"><img src="images/logo puyuh kri.jpg" alt="puyuh kri" class="img-logo"></a></div>
+
+
+    <ul class="menu" id="menu">
+    <li><a href="/">Beranda</a></li>
+    <li><a href="/#tentang">Tentang Kami</a></li>
+    <li><a href="/harga.html">Harga</a></li>
+    <li><a href="/galeri.html">Galeri</a></li>
+    <li><a href="/kontak.html">Kontak</a></li>
+    </ul>
+
+
+    <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+    </div>
+</nav>
+<script>
+const hamburger = document.getElementById('hamburger');
+const menu = document.getElementById('menu');
+
+
+hamburger.addEventListener('click', () => {
+menu.classList.toggle('active');
+hamburger.classList.toggle('active');
+});
+</script>
+
+<header>
+<h1>Kontak & Pesan</h1>
+<p>Hubungi kami untuk pemesanan dan informasi lebih lanjut</p>
+</header>
+
+
+<main class="container" id="kontak">
+<!-- FORM PESAN -->
+<section class="contact-form">
+<h2>Kirim Pesan</h2>
+<form>
+<div class="form-group">
+<label>Nama Lengkap</label>
+<input type="text" placeholder="Nama Anda" required />
+</div>
+
+
+<div class="form-group">
+<label>Nomor WhatsApp</label>
+<input type="text" placeholder="08xxxxxxxxxx" required />
+</div>
+
+
+<div class="form-group">
+<label>Pesan</label>
+<textarea placeholder="Tulis pesan atau pesanan Anda"></textarea>
+</div>
+
+
+<button type="submit" class="btn">Kirim Pesan</button>
+</form>
+</section>
+
+
+<!-- INFO KONTAK -->
+<section class="contact-info">
+<h2>Informasi Kontak</h2>
+<p><strong>Alamat:</strong><br />Jl. Peternakan Sejahtera No. 10</p>
+<p><strong>WhatsApp:</strong><br /> <a href="https://wa.me/628xxxxxxxxx">08xxxxxxxxxx</a></p>
+<p><strong>Email:</strong><br /> info@pasarunggas.id</p>
+<p><strong>Jam Operasional:</strong><br /> Senin – Sabtu (08.00 – 17.00)</p>
+</section>
+</main>
+<!-- FOOTER -->
+<section id="footer" class="section footer">
+<p>&copy; 2025 Puyuh KRI Bekasi</p>
+<p>WhatsApp: 08xxxxxxxx | Email: info@puyuhkri.id</p>
+</section>
+</body>
+</html>
