@@ -843,6 +843,34 @@ color: #6b7280;
   line-height: auto;
 }
 
+/* FLOATING WHATSAPP CTA */
+.wa-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25D366;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  animation: pulse 1.8s infinite;
+}
+
+.wa-float img {
+  width: 34px;
+  height: 34px;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .menu {
