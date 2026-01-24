@@ -843,6 +843,17 @@ color: #6b7280;
   line-height: auto;
 }
 
+.responsive-img {
+  width: 100%;    /* Makes the image scale to the width of its container */
+  max-width: 100%; /* Ensures the image doesn't exceed its parent container's width */
+  height: auto;    /* Automatically adjusts the height to maintain the aspect ratio */
+  display: block;  /* Helps with centering and layout issues */
+  margin: 0 auto;  /* Optional: Centers the image if it's smaller than its container */
+  background-origin: padding-box;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* FLOATING WHATSAPP CTA */
 .wa-float {
   position: fixed;
